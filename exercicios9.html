@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de cliques</title>
+</head>
+<body>
+
+    <style>
+        button{
+            width: 20%;
+            font-family: monospace;
+            cursor: pointer;
+            background: rgb(249,170,195);
+background: radial-gradient(circle, rgba(249,170,195,1) 0%, rgba(238,189,156,1) 100%);
+            font-size: 15px;
+            transition-duration: 0.4s;
+            padding: 5%;
+            text-align: center;
+            border: 3px solid;            
+            border-radius: 2%;
+
+        }
+
+        p{
+            text-align: center;
+            padding-top: 5%;
+        }
+
+        body{
+            background-color: rgb(255, 216, 202);
+        }
+
+        img{
+            width: 10%;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+    </style>
+
+    <h1 style="text-align: center; font-size: 30px;
+     font-family: Arial, Helvetica, sans-serif; color: coral;">Contador de cliques</h1>
+ 
+ <button onclick="contar()">Clique aqui</button>
+ <button onclick="zerar()">Zerar o contador</button>
+ <section id="result">
+     <p>O contador está com <mark>0</mark> cliques.</p>
+ </section>
+
+ <div class="container">
+<img src="clique.png">
+ </div>
+    
+ <script src="exercicios9.js"></script>
+    
+</body>
+</html>

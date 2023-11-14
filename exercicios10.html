@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript externo</title>
+</head>
+<body>
+
+    <style>
+        body{
+            background: rgb(112,178,246);
+            background: radial-gradient(circle, rgba(112,178,246,1) 0%,
+            rgba(176,223,250,1) 0%, rgba(156,209,249,1) 70%, rgba(158,211,249,1) 100%, rgba(223,255,253,1) 100%);
+        }
+
+        button{
+            width: 10%;
+            text-align: center;
+            cursor: pointer;
+            padding-left: 50%;
+            padding-right: 50%;
+            font-size: 15px;
+        }
+
+        p{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        img {
+            width: 30%;
+            padding: 5%;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+    <h1 style="text-align: center; font-size: 30px; 
+    font-family: Arial, Helvetica, sans-serif; color: background rgb(112,178,246);
+background: linear-gradient(0deg, rgba(112,178,246,1) 15%, rgba(223,255,253,1) 100%);">
+    Javascript externo</h1>
+
+    <button onclick="acao1()">Ação 1</button>
+    <button onclick="acao2()">Ação 2</button>
+    <button onclick="acao3()">Ação 3</button>
+    <button onclick="acao4()">Ação 4</button>
+    <section id="saida">
+        <p>Aqui vou registrar suas ações com os botões acima.</p>
+    </section>
+
+    <div class="container">
+        <img src="java.jpg">
+        </div>
+
+    <script src="exercicios10.html"></script>
+</body>
+</html>

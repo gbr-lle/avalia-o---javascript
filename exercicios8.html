@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        button{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);;
+            border: solid 6px;
+            width: 10%;
+            font-size: 20px;
+            border-radius: 5%;
+            border-color:  rgb(185, 87, 185);
+        }
+
+        body{
+            background-color: rgb(233, 195, 233);
+        }
+        
+        button:hover{
+            background-color: purple;
+        }
+
+        
+    </style>
+   <h1 style="text-align: center; color: rgb(185, 87, 185);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 3%;">Vários cálculos em Javascript</h1>
+
+    <button onclick="calcular()">Clique para calcular</button>
+    <section id="result">
+        <h1 style="text-align: center; font-size: 25px; padding-top: 20%; 
+        font-family: Arial, Helvetica, sans-serif;">O resultado vai aparecer aqui</h1>
+    </section>
+
+    <script>
+        function calcular() {
+            let res = document.querySelector('section#result')
+            res.innerHTML = `<p>O número a ser analisado aqui será o <strong>${num}</strong></p><hr>`
+            res.innerHTML += `<p>O seu valor absoluto é ${Math.abs(num)}</p>`
+            res.innerHTML += `<p>A sua parte inteira é ${Math.trunc(num)}</p>`
+            res.innerHTML += `<p>O valor inteiro mais próximo é ${Math.round(num)}</p>`
+            res.innerHTML += `<p>A sua raiz quadrada é ${Math.sqrt(num)}</p>` 
+            res.innerHTML += `<p>A sua raiz cúbica é ${Math.cbrt(num)}</p>`        
+            res.innerHTML += `<p>O valor de ${num}<sup>2</sup> é ${Math.pow(num, 2)}</p>`
+            res.innerHTML += `<p>O valor de ${num}<sup>3</sup> é ${Math.pow(num, 3)}</p>`
+        }
+    </script>
+    
+</body>
+</html>
